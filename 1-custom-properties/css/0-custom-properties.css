@@ -1,0 +1,10 @@
+:root {
+  --error-font-family: "Comic Sans MS";
+  --error-color: red;
+}
+
+.error {
+  font-size: 5em;
+  font-family: var(--error-font-family);
+  color: var(--error-color);
+}

@@ -1,0 +1,14 @@
+$start-color: red;
+
+body {
+  -webkit-animation: colorwheel 1s infinite;
+  background: $start-color;
+}
+
+@-webkit-keyframes colorwheel {
+  @for $i from 0 through 360 {
+    #{$i * 0.2777777777%} {
+      background: adjust-hue($start-color, $i);
+    }
+  }
+}
