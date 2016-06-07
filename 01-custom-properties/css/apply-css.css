@@ -1,0 +1,24 @@
+:root {
+  --error: {
+    border: solid 1px red;
+    color: #000;
+  }
+
+  --bad-error: {
+    color: red;
+  }
+}
+
+.error {
+  @apply --error;
+}
+
+.bad-error {
+  @apply --bad-error;
+}
+
+.really-bad-error {
+  @apply --error;
+  @apply --bad-error;
+  font-weight: bold;
+}

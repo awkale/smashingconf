@@ -1,0 +1,95 @@
+.teaser {
+  max-width: 400px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-bottom: solid 3px #333;
+}
+
+.teaser h1 {
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+}
+
+.teaser p {
+  padding: 0 10px;
+}
+
+.teaser a {
+  font-weight: bold;
+  color: #333;
+}
+
+.teaser.deals {
+  border-bottom-color: #ff5300;
+}
+
+.teaser.deals h1 {
+  background: #ff5300;
+}
+
+.teaser.deals a {
+  color: #ff5300;
+}
+
+.teaser.events {
+  border-bottom-color: #0065c3;
+}
+
+.teaser.events h1 {
+  background: #0065c3;
+}
+
+.teaser.events a {
+  color: #0065c3;
+}
+
+.teaser.experts {
+  border-bottom-color: #00b9f2;
+}
+
+.teaser.experts h1 {
+  background: #00b9f2;
+}
+
+.teaser.experts a {
+  color: #00b9f2;
+}
+
+.teaser.topics {
+  border-bottom-color: #5d4ab7;
+}
+
+.teaser.topics h1 {
+  background: #5d4ab7;
+}
+
+.teaser.topics a {
+  color: #5d4ab7;
+}
+
+.teaser.essentials {
+  border-bottom-color: #61bb00;
+}
+
+.teaser.essentials h1 {
+  background: #61bb00;
+}
+
+.teaser.essentials a {
+  color: #61bb00;
+}
+
+.teaser.teams {
+  border-bottom-color: #bed600;
+}
+
+.teaser.teams h1 {
+  background: #bed600;
+}
+
+.teaser.teams a {
+  color: #bed600;
+}

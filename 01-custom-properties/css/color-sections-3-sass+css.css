@@ -1,0 +1,47 @@
+.teaser {
+  max-width: 400px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-bottom: solid 3px var(--section-color, #333);
+}
+
+.teaser h1 {
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #fff;
+  background: var(--section-color, #333);
+}
+
+.teaser p {
+  padding: 0 10px;
+}
+
+.teaser a {
+  font-weight: bold;
+  color: var(--section-color, #333);
+}
+
+.teaser.deals {
+  --section-color: #ff5300;
+}
+
+.teaser.events {
+  --section-color: #0065c3;
+}
+
+.teaser.experts {
+  --section-color: #00b9f2;
+}
+
+.teaser.topics {
+  --section-color: #5d4ab7;
+}
+
+.teaser.essentials {
+  --section-color: #61bb00;
+}
+
+.teaser.teams {
+  --section-color: #bed600;
+}

@@ -1,0 +1,27 @@
+$variables: ();
+
+@function var($var) {
+  @each $k, $v in map-get($custom-properties, $var) {
+    $selector: nth(nth(&, 1) ,1);
+
+    @if str-index($selector, " ") {
+      $selector: str-slice(&, 0, str-index($selector, " "));
+    }
+
+    $variables: map-merge($variables, (unquote("#{$selector}.#{$k}"): $var $v)) !global;
+  }
+
+  @return unquote("var(#{$var})");
+}
+
+@mixin magic {
+  @each $selector, $var-value in $variables {
+    #{$selector} {
+      #{nth($var-value, 1)}: nth($var-value, 2);
+    }
+  }
+
+  #debug {
+    content: "#{$variables}";
+  }
+}

@@ -1,0 +1,43 @@
+@import "function-var";
+
+$custom-properties: (
+  --section-color: (
+    deals: #ff5300,
+    events: #0065c3,
+    experts: #00b9f2,
+    topics: #5d4ab7,
+    essentials: #61bb00,
+    teams: #bed600
+  )
+);
+
+:root {
+  --section-color: #333;
+}
+
+.teaser {
+  max-width: 400px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-bottom: solid 3px;
+  border-bottom-color: var(--section-color);
+
+  h1 {
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #fff;
+    background: var(--section-color);
+  }
+
+  p {
+    padding: 0 10px;
+  }
+
+  a {
+    font-weight: bold;
+    color: var(--section-color);
+  }
+}
+
+@include magic;
